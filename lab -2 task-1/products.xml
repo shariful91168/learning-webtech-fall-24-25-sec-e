@@ -16,7 +16,7 @@
 </products>
 
 <products>
-	<id se="23"><\id>
+	<id se="23"></id>
 	<name>nokia</name>
 	<unit_price>25100</unit_price>
 	<stock>100</stock>
