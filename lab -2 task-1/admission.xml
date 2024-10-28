@@ -7,7 +7,7 @@
         	<day>25</day>
         	<month>12</month>
         	<year>2015</year>
-
+	</date>
 </students>
 
 <students>
@@ -18,7 +18,7 @@
         	<day>13</day>
         	<month>01</month>
         	<year>1999</year>
-
+	</date>
 </students>
 
 <students>
@@ -29,7 +29,7 @@
         	<day>17</day>
         	<month>06</month>
         	<year>2005</year>
-
+	</date>
 </students>
 
 </admission>
