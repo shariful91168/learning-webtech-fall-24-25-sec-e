@@ -1,0 +1,36 @@
+<admission>
+<students>
+	<serial_no se="23"></serial_no>
+	<first_name>john</first_name>
+	<last_name>carter</last_name>
+	<date>
+        	<day>25</day>
+        	<month>12</month>
+        	<year>2015</year>
+
+</students>
+
+<students>
+	<serial_no se="29"></serial_no>
+	<first_name>bob</first_name>
+	<last_name>marshal</last_name>
+	<date>
+        	<day>13</day>
+        	<month>01</month>
+        	<year>1999</year>
+
+</students>
+
+<students>
+	<serial_no se="35"></serial_no>
+	<first_name>clark</first_name>
+	<last_name>kent</last_name>
+	<date>
+        	<day>17</day>
+        	<month>06</month>
+        	<year>2005</year>
+
+</students>
+
+</admission>
+
