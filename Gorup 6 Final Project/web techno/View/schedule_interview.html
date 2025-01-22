@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Interview</title>
+    <script src="../validation_ajax.js"></script>
+</head>
+<body>
+    <h1>Schedule an Interview</h1>
+    <form id="scheduleInterviewForm">
+        <label for="applicantId">Applicant ID:</label>
+        <input type="number" id="applicantId" name="applicantId" required><br><br>
+
+        <label for="interviewDate">Interview Date:</label>
+        <input type="date" id="interviewDate" name="interviewDate" required><br><br>
+
+        <button type="submit">Schedule</button>
+    </form>
+
+    <div id="scheduleResponse"></div>
+
+    <script>
+        document.getElementById('scheduleInterviewForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const applicantId = document.getElementById('applicantId').value;
+            const interviewDate = document.getElementById('interviewDate').value;
+
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', '../Controller/schedule_interview.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                document.getElementById('scheduleResponse').innerText = xhr.responseText;
+            };
+            xhr.send(JSON.stringify({ applicantId, interviewDate }));
+        });
+    </script>
+</body>
+</html>
+
